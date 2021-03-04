@@ -9,6 +9,17 @@
     <script type="module" src="js/model-viewer.js"></script>
   </head>
   <body>
-    <model-viewer src="assets/Pro-XHybridKiosk.glb" auto-rotate camera-controls></model-viewer>
+    <div class="grid-container">
+      <div class="selectors">
+        <img id="proxBlack" src="assets/proxBlack.png">
+        <img id="proxWhite" src="assets/proxWhite.png">
+      </div>
+      <model-viewer 
+        src="assets/Pro-XHybrid-Black.glb" 
+        auto-rotate 
+        camera-controls>
+      </model-viewer>      
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
