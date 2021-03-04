@@ -5,7 +5,7 @@ body {
 }
 
 model-viewer {
-  max-width: 195px;
+  width: 195px;
   height: 195px;
   grid-template-areas: models;
 }
