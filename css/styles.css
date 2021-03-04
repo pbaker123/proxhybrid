@@ -1,10 +1,12 @@
+/* Vertical Phone viewport width is minimally 0px */
+
 body {
   overflow: hidden;
 }
 
 model-viewer {
-  width: 170px;
-  height: 170px;
+  max-width: 195px;
+  height: 195px;
   grid-template-areas: models;
 }
 
@@ -28,16 +30,34 @@ model-viewer {
   padding: 5px;
 }
 
-@media only screen and (min-width: 384px) {
+/* Horizontal Phone viewport width is minimally 376px */
+@media only screen and (min-width: 376px) {
   model-viewer {
-    width: 335px;
-    height: 335px;
+    width: 375px;
+    height: 375px;
   }
 }
 
-@media only screen and (min-width: 563px) {
+/* Vertical Tablet viewport width is minimally 368px */
+@media only screen and (min-width: 368px) {
   model-viewer {
-    width: 700px;
-    height: 700px;
+    width: 450px;
+    height: 450px;
+  }
+}
+
+/* Horizontal Tablet viewport width is minimally 557px */
+@media only screen and (min-width: 557px) {
+  model-viewer {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+/* Desktop  viewport width is minimally 1150px */
+@media only screen and (min-width: 1150px) {
+  model-viewer {
+    width: 500px;
+    height: 500px;
   }
 }
